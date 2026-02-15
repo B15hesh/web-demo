@@ -1,0 +1,211 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+header {
+    background: #1f2d3d;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1f2d3d;
+    border-left: 5px solid #00bcd4;
+    padding-left: 10px;
+}
+
+h2 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #2c3e50;
+    border-left: 5px solid #00bcd4;
+    padding-left: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   TEXT & LISTS
+========================= */
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   TABLE (Modern Look)
+========================= */
+.tablewrapper{
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    min-width: 600px;
+}
+
+th {
+    background: #1f2d3d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+    padding: 10px 18px;
+    background: #00bcd4;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #0097a7;
+}
+
+/* =========================
+   ASIDE
+========================= */
+aside {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+/* =========================
+   IFRAME
+========================= */
+iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 320px;
+    border-radius: 6px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #1f2d3d;
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        width: 80%;          /* make links full width for easier tapping */
+        text-align: center;
+        padding: 10px 0;
+    }
+}
